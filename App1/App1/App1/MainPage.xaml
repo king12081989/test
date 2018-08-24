@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout Padding="0,20,0,0" WidthRequest="200" HorizontalOptions="Fill" VerticalOptions="Center">
+        <Entry Placeholder="Login"
+           Text=""
+           x:Name="Logtxt"
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+           WidthRequest="200"
+           
+           
+           />
+        <Entry Placeholder="Pass"
+           Text=""
+           x:Name="pastxt"
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+           WidthRequest="200"
+           IsPassword="True"
+           
+           />
+        <Button Text="OK"
+            x:Name="Btn_OK"
+            HorizontalOptions="CenterAndExpand"
+           VerticalOptions="Start"
+            BorderWidth="5"
+            BorderRadius="5"
+            WidthRequest="200"
+            
+            />
+        <Button Text="Регистрация"
+            x:Name="Btn_reg"
+            HorizontalOptions="CenterAndExpand"
+           VerticalOptions="Start"
+            BorderWidth="5"
+            BorderRadius="5"
+            WidthRequest="200"
+            
+            />
+
+    </StackLayout>
+
+</ContentPage>

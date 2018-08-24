@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.regpage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Fill" VerticalOptions="Center" >
+                <Label
+              Text="Регистрация"
+              HorizontalTextAlignment ="Center"
+              VerticalOptions="Start"
+              FontSize="Large"
+              Margin="10"
+              TextColor="DarkRed"
+             />
+                <Entry Placeholder="Имя"
+              Text=""
+              x:Name="Nametxt"
+              HorizontalOptions="CenterAndExpand"
+              VerticalOptions="Start"
+              WidthRequest="250"
+              Margin="5"       
+              Keyboard="Text"
+           />
+                <Entry Placeholder="Фамилия"
+             Text=""
+             x:Name="Secnametxt"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             WidthRequest="250"
+             Margin="5"     
+             Keyboard="Text"
+           />
+                <Entry Placeholder="e-mail"
+             Text=""
+             x:Name="mail"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             WidthRequest="250"
+             Margin="5"   
+             Keyboard="Email"
+           />
+                <Entry Placeholder="Телефон"
+             Text=""
+             x:Name="phone"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             WidthRequest="250"
+             Margin="5" 
+             Keyboard="Telephone"
+             
+           />
+
+
+
+                <Picker x:Name="picker" Title = "Загрузка" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="250" Margin="5" IsEnabled="False">
+
+                </Picker>
+                <Picker x:Name="pickerreg" Title = "Регион" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="250" Margin="5" IsEnabled="False">
+
+                </Picker>
+                <Picker x:Name="pickercity" Title = "Город" HorizontalOptions="Center" VerticalOptions="Start" WidthRequest="250" Margin="5" IsEnabled="False">
+
+                </Picker>
+                <Entry Placeholder="Пароль"
+             Text=""
+             IsPassword="True"
+             x:Name="pastxt"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             WidthRequest="250"
+             Margin="5"     
+             Keyboard="Text"
+           />
+                <Entry Placeholder="Подтверждение пароля"
+             Text=""
+             IsPassword="True"
+             x:Name="pasctxt"
+             HorizontalOptions="Center"
+             VerticalOptions="Start"
+             WidthRequest="250"
+             Margin="5"     
+             Keyboard="Text"
+           />
+
+                <Button Text="Зарегистрироваться"
+             x:Name="Bregf"
+             HorizontalOptions="CenterAndExpand"
+             VerticalOptions="Start"
+             BorderWidth="5"
+             BorderRadius="5"
+             WidthRequest="250"
+            
+            />
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
